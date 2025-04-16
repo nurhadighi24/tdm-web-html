@@ -14,4 +14,390 @@ body {
 a {
   text-decoration: none;
   color: #3f99da;
+}
+
+.container .navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+}
+.container .navbar .left_side .logo {
+  width: 80px;
+}
+.container .navbar .right_side a {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: black;
+  padding-right: 32px;
+}
+.container .navbar .right_side button {
+  color: white;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  background-color: #ef8b15;
+  border-radius: 20px;
+  padding: 16px 45px;
+}
+.container .hero img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container #aboutUs {
+  padding-top: 100px;
+}
+.container #aboutUs .logo_section {
+  width: 287px;
+}
+.container #aboutUs .bridge_ctr {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+}
+.container #aboutUs .bridge_ctr .left_side .bridge_img {
+  width: 511px;
+}
+.container #aboutUs .bridge_ctr .right_side {
+  width: 523px;
+}
+.container #aboutUs .bridge_ctr .right_side .title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  letter-spacing: -2.5%;
+  color: #b88e2f;
+}
+.container #aboutUs .bridge_ctr .right_side .description {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #333333;
+}
+.container #aboutUs .tailored_ctr {
+  padding-top: 100px;
+}
+.container #aboutUs .tailored_ctr .up_side {
+  text-align: center;
+}
+.container #aboutUs .tailored_ctr .up_side .title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: -2.5%;
+  text-align: center;
+  color: #111827;
+}
+.container #aboutUs .tailored_ctr .up_side .description {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #111827;
+}
+.container #aboutUs .tailored_ctr .down_side {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 50px;
+}
+.container #aboutUs .tailored_ctr .down_side .benefits_ctr {
+  width: 280px;
+  padding-bottom: 40px;
+}
+.container #aboutUs .tailored_ctr .down_side .benefits_ctr .title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 30px;
+  letter-spacing: -2.5%;
+  text-align: center;
+  color: #111827;
+}
+.container #aboutUs .tailored_ctr .down_side .benefits_ctr .description {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #111827;
+}
+.container #aboutUs .vismis_ctr .up_side {
+  display: flex;
+}
+.container #aboutUs .vismis_ctr .up_side .monas_ctr {
+  position: relative;
+  width: 50%;
+}
+.container #aboutUs .vismis_ctr .up_side .monas_ctr .monas_img {
+  width: 100%;
+}
+.container #aboutUs .vismis_ctr .up_side .monas_ctr .logo_section {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+.container #aboutUs .vismis_ctr .up_side .vision_ctr {
+  width: 50%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 5px 5px 5px 5px #888888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container #aboutUs .vismis_ctr .up_side .vision_ctr .title {
+  width: 224px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 62px;
+  letter-spacing: -1px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1c1c1c;
+}
+.container #aboutUs .vismis_ctr .up_side .vision_ctr .description {
+  width: 224px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #5e5b5b;
+}
+.container #aboutUs .vismis_ctr .down_side {
+  display: flex;
+}
+.container #aboutUs .vismis_ctr .down_side .mission_ctr {
+  width: 50%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 5px 5px 5px 5px #888888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container #aboutUs .vismis_ctr .down_side .mission_ctr .title {
+  width: 224px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 62px;
+  letter-spacing: -1px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1c1c1c;
+}
+.container #aboutUs .vismis_ctr .down_side .mission_ctr .description {
+  width: 224px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #5e5b5b;
+}
+.container #aboutUs .vismis_ctr .down_side .yunani_ctr {
+  width: 50%;
+}
+.container #aboutUs .vismis_ctr .down_side .yunani_ctr .yunani_img {
+  width: 100%;
+}
+.container #whytdm {
+  padding: 100px 10px;
+}
+.container #whytdm .up_side {
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.container #whytdm .up_side .left_side {
+  width: 500px;
+}
+.container #whytdm .up_side .left_side .title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  letter-spacing: -2.5%;
+  text-align: center;
+  color: #b88e2f;
+}
+.container #whytdm .up_side .left_side .description {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #333333;
+}
+.container #whytdm .up_side .right_side .whytdm_img {
+  width: 500px;
+}
+.container #whytdm .down_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.container #whytdm .down_side .card_ctr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 254px;
+  height: 328px;
+  border: 5px solid #9ca3af;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.container #whytdm .down_side .card_ctr .title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: -2.5%;
+  text-align: center;
+  color: #111827;
+}
+.container #whytdm .down_side .card_ctr .description {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #111827;
+}
+.container #gallery {
+  padding-left: 78px;
+  padding-right: 78px;
+}
+.container #gallery .sentence_ctr {
+  display: flex;
+  justify-content: space-between;
+}
+.container #gallery .sentence_ctr .left_side {
+  width: 535px;
+}
+.container #gallery .sentence_ctr .left_side .title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 17px;
+}
+.container #gallery .sentence_ctr .left_side .description {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #636363;
+}
+.container #gallery .gallery_ctr_1 {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.container #gallery .gallery_ctr_1 .left_side {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.container #gallery .gallery_ctr_1 .left_side img {
+  width: 281px;
+  display: flex;
+}
+.container #gallery .gallery_ctr_1 .center_side {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.container #gallery .gallery_ctr_1 .center_side img {
+  width: 281px;
+}
+.container #gallery .gallery_ctr_1 .right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container #gallery .gallery_ctr_1 .right_side img {
+  width: 281px;
+}
+.container #gallery .gallery_ctr_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.container #gallery .gallery_ctr_2 .gallery_6 {
+  width: 281px;
+}
+.container #gallery .gallery_ctr_2 .gallery_7 {
+  width: 281px;
+}
+.container #gallery .gallery_ctr_2 .gallery_8 {
+  width: 580px;
+}
+.container #gallery .gallery_ctr_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.container #gallery .gallery_ctr_3 .left_side img {
+  width: 568px;
+}
+.container #gallery .gallery_ctr_3 .center_side {
+  width: 290px;
+}
+.container #gallery .gallery_ctr_3 .center_side img {
+  width: 290px;
+}
+.container #gallery .gallery_ctr_3 .right_side {
+  width: 290px;
+}
+.container #gallery .gallery_ctr_3 .right_side img {
+  width: 290px;
+}
+.container #gallery .gallery_ctr_4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container #gallery .gallery_ctr_4 img {
+  width: 282px;
 }/*# sourceMappingURL=landing_page.css.map */
