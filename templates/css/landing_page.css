@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: #3f99da;
+}/*# sourceMappingURL=landing_page.css.map */
