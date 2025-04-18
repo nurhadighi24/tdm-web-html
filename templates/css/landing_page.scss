@@ -690,7 +690,7 @@ a {
         position: absolute;
         top: 70px;
         left: 0;
-        height: 100vh;
+        height: max-content;
         width: 300px;
         background-color: white;
         flex-direction: column;
@@ -699,6 +699,11 @@ a {
         gap: 20px;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
         z-index: 1000;
+        // Tambahan untuk animasi
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        display: flex; // penting, supaya tidak perlu toggle display
 
         a {
           padding: 12px 0;
@@ -712,6 +717,415 @@ a {
 
       .right_side.active {
         display: flex;
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    #aboutUs {
+      .logo_section {
+        width: 110px;
+      }
+
+      .bridge_ctr {
+        padding-left: 13px;
+        padding-right: 13px;
+        .left_side {
+          .bridge_img {
+            width: 182px;
+          }
+        }
+
+        .right_side {
+          width: 247px;
+
+          .title {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 19px;
+            letter-spacing: -2.5%;
+          }
+
+          .description {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 15px;
+            letter-spacing: 0%;
+          }
+        }
+      }
+
+      .tailored_ctr {
+        .up_side {
+          padding-left: 70px;
+          padding-right: 70px;
+          .title {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: -2.5%;
+            text-align: center;
+          }
+
+          .description {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+          }
+        }
+
+        .down_side {
+          align-items: center;
+          flex-direction: column;
+          margin-left: 12px;
+          margin-right: 12px;
+          gap: 25px;
+          .left_side {
+            .benefits_ctr {
+              width: 201px;
+              .title {
+                font-family: Poppins;
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 30px;
+                letter-spacing: -2.5%;
+                text-align: center;
+              }
+
+              .description {
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: center;
+              }
+            }
+          }
+          .right_side {
+            .benefits_ctr {
+              width: 201px;
+              .title {
+                font-family: Poppins;
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 30px;
+                letter-spacing: -2.5%;
+                text-align: center;
+              }
+
+              .description {
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      .vismis_ctr {
+        .up_side {
+          flex-direction: column;
+          .monas_ctr {
+            width: 100%;
+            .monas_img {
+              width: 100%;
+            }
+            .logo_section {
+              display: none;
+            }
+          }
+
+          .vision_ctr {
+            border: none;
+            box-shadow: none;
+            width: 100%;
+            padding: 80px 0;
+            .title {
+              font-family: Poppins;
+              font-weight: 700;
+              font-size: 30px;
+              line-height: 62px;
+              letter-spacing: -1px;
+              text-align: center;
+              text-transform: capitalize;
+            }
+
+            .description {
+              font-family: Poppins;
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 24px;
+              letter-spacing: 0%;
+              text-align: center;
+            }
+          }
+        }
+
+        .down_side {
+          flex-direction: column;
+          .mission_ctr {
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            padding: 80px 0;
+            .title {
+              font-family: Poppins;
+              font-weight: 700;
+              font-size: 30px;
+              line-height: 62px;
+              letter-spacing: -1px;
+              text-align: center;
+              text-transform: capitalize;
+            }
+
+            .description {
+              font-family: Poppins;
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 24px;
+              letter-spacing: 0%;
+              text-align: center;
+            }
+          }
+
+          .yunani_ctr {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    #whytdm {
+      .up_side {
+        flex-direction: column;
+        .left_side {
+          width: 280px;
+
+          .title {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: -2.5%;
+            text-align: center;
+          }
+          .description {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+          }
+        }
+
+        .right_side {
+          .whytdm_img {
+            width: 380px;
+          }
+        }
+      }
+
+      .down_side {
+        flex-direction: column;
+      }
+    }
+
+    #gallery {
+      padding-left: 16px;
+      padding-right: 16px;
+      .sentence_ctr {
+        display: block;
+        .left_side {
+          width: 100%;
+          .title {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+
+          .description {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+        }
+
+        .gallery_ctr_1 {
+          gap: 3px;
+          justify-content: start;
+          .left_side {
+            justify-content: start;
+            img {
+              width: 100px;
+              display: block;
+            }
+          }
+          .center_side {
+            justify-content: start;
+            img {
+              width: 85px;
+            }
+          }
+          .right_side {
+            display: block;
+            justify-content: start;
+            img {
+              width: 100px;
+            }
+          }
+        }
+      }
+      .gallery_ctr_2 {
+        gap: 3px;
+        .gallery_6 {
+          width: 90px;
+        }
+        .gallery_7 {
+          width: 90px;
+        }
+        .gallery_8 {
+          width: 199px;
+        }
+      }
+
+      .gallery_ctr_3 {
+        gap: 3px;
+        .left_side {
+          img {
+            width: 200px;
+          }
+        }
+        .center_side {
+          img {
+            width: 90px;
+          }
+        }
+        .right_side {
+          img {
+            width: 90px;
+          }
+        }
+      }
+
+      .gallery_ctr_4 {
+        gap: 3px;
+        img {
+          width: 90px;
+        }
+      }
+    }
+
+    #ourpartners {
+      .up_side {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        .title {
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          text-align: center;
+        }
+        .description {
+          font-family: Poppins;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          text-align: center;
+        }
+      }
+
+      .down_side {
+        grid-template-columns: none;
+      }
+    }
+
+    #ourteam {
+      .up_side {
+        .title_orange {
+          font-family: Poppins;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 30px;
+          letter-spacing: 0%;
+          text-align: center;
+        }
+        .title {
+          font-family: Poppins;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 56px;
+          letter-spacing: 0%;
+          text-align: center;
+        }
+        .description {
+          font-family: Poppins;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 16px;
+          letter-spacing: 0%;
+          text-align: center;
+        }
+      }
+
+      .down_side {
+        flex-direction: column;
+      }
+    }
+
+    .footer_ctr {
+      flex-direction: column;
+      gap: 20px;
+
+      .left_side {
+        width: 100%;
+        img {
+          width: 216px;
+        }
+
+        .title {
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
+        .description {
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
+      }
+
+      .right_side {
+        .up_side {
+          flex-direction: column;
+        }
       }
     }
   }
