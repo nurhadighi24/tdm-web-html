@@ -10,10 +10,11 @@
   <body>
     <div class="container">
       <header class="navbar">
+        <div class="hamburger" id="hamburger">&#9776;</div>
         <a class="left_side" href="#"
           ><img class="logo" src="images/logo_nav.png" alt="logo nav"
         /></a>
-        <div class="right_side">
+        <div class="right_side" id="sidebar">
           <a href="#">Home</a>
           <a href="#aboutUs">Abous Us</a>
           <a href="#whytdm">Why TDM?</a>
@@ -312,4 +313,12 @@
       </footer>
     </div>
   </body>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const sidebar = document.getElementById("sidebar");
+
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  </script>
 </html>
