@@ -23,6 +23,31 @@ a {
 }
 
 .container {
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 999;
+    background-color: #ef8b15;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 14px 18px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #cf7410;
+    }
+  }
+
+  #scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+  }
   .navbar {
     background-color: white;
     display: flex;
