@@ -114,8 +114,13 @@ a {
 }
 .container #aboutUs .tailored_ctr {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .container #aboutUs .tailored_ctr .up_side {
+  width: 800px;
   text-align: center;
 }
 .container #aboutUs .tailored_ctr .up_side .title {

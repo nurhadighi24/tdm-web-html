@@ -143,7 +143,12 @@ a {
 
     .tailored_ctr {
       padding-top: 100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       .up_side {
+        width: 800px;
         text-align: center;
 
         .title {
