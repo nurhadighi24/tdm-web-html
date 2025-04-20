@@ -510,10 +510,52 @@ a {
   gap: 10px;
 }
 .container #ourteam .down_side .card_ctr {
+  position: relative;
   width: 276px;
-  height: 327px;
+  height: 350px;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container #ourteam .down_side .card_ctr .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  background-color: #424242;
+  z-index: -9;
+}
+.container #ourteam .down_side .card_ctr .img_ctr {
+  width: 150px;
+  border-radius: 999px;
+}
+.container #ourteam .down_side .card_ctr .img_ctr img {
+  border-radius: 999px;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.container #ourteam .down_side .card_ctr .profile_ctr .name {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 20px;
+}
+.container #ourteam .down_side .card_ctr .profile_ctr .job {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #9095a1;
 }
 .container .footer_ctr {
   display: flex;
