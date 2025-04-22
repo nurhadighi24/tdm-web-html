@@ -521,6 +521,7 @@ a {
   justify-content: center;
 }
 .container #ourteam .down_side .card_ctr .bg {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -712,8 +713,8 @@ a {
     letter-spacing: 0%;
   }
   .container #aboutUs .tailored_ctr .up_side {
-    padding-left: 70px;
-    padding-right: 70px;
+    width: 100%;
+    padding: 0 20px;
   }
   .container #aboutUs .tailored_ctr .up_side .title {
     font-family: Poppins;
