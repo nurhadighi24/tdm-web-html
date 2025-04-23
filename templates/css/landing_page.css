@@ -52,6 +52,20 @@ a {
 .container .navbar .left_side .logo {
   width: 80px;
 }
+.container .navbar .right_side .contact-button {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #ef8b15;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.container .navbar .right_side .contact-button:hover {
+  background-color: #e65c1e;
+}
 .container .navbar .right_side a {
   font-family: Poppins;
   font-weight: 600;
@@ -92,6 +106,7 @@ a {
 }
 .container #aboutUs .bridge_ctr .left_side .bridge_img {
   width: 511px;
+  border-radius: 100px;
 }
 .container #aboutUs .bridge_ctr .right_side {
   width: 523px;
@@ -512,7 +527,7 @@ a {
 .container #ourteam .down_side .card_ctr {
   position: relative;
   width: 276px;
-  height: 350px;
+  height: 370px;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
   display: flex;
@@ -531,23 +546,34 @@ a {
   z-index: -9;
 }
 .container #ourteam .down_side .card_ctr .img_ctr {
-  width: 150px;
-  border-radius: 999px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
 }
 .container #ourteam .down_side .card_ctr .img_ctr img {
-  border-radius: 999px;
   width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container #ourteam .down_side .card_ctr .profile_ctr {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.container #ourteam .down_side .card_ctr .profile_ctr.arga .name {
+  font-size: 15px;
 }
 .container #ourteam .down_side .card_ctr .profile_ctr .name {
   font-family: Poppins;
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   letter-spacing: 0%;
   text-align: center;
-  margin-top: 20px;
 }
 .container #ourteam .down_side .card_ctr .profile_ctr .job {
   font-family: Poppins;

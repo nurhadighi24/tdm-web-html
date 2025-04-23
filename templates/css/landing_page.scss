@@ -66,6 +66,22 @@ a {
     }
 
     .right_side {
+      .contact-button {
+        display: inline-block;
+        padding: 15px 20px;
+        background-color: #ef8b15;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #e65c1e;
+        }
+      }
+
       a {
         font-family: Poppins;
         font-weight: 600;
@@ -115,6 +131,7 @@ a {
       .left_side {
         .bridge_img {
           width: 511px;
+          border-radius: 100px;
         }
       }
 
@@ -597,7 +614,7 @@ a {
       .card_ctr {
         position: relative;
         width: 276px;
-        height: 350px;
+        height: 370px;
         border: 1px solid #d9d9d9;
         border-radius: 5px;
         display: flex;
@@ -617,25 +634,40 @@ a {
         }
 
         .img_ctr {
-          width: 150px;
-          border-radius: 999px;
+          width: 200px;
+          height: 200px;
+          // border-radius: 100%;
+          overflow: hidden;
 
           img {
-            border-radius: 999px;
             width: 100%;
-            object-fit: fill;
+            height: 100%;
+            object-fit: cover;
+            // border-radius: 100%;
           }
         }
 
         .profile_ctr {
+          width: 100%;
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+
+          &.arga {
+            .name {
+              font-size: 15px;
+            }
+          }
+
           .name {
             font-family: Poppins;
             font-weight: 700;
             font-size: 20px;
-            line-height: 30px;
+            line-height: 20px;
             letter-spacing: 0%;
             text-align: center;
-            margin-top: 20px;
           }
 
           .job {
