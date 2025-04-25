@@ -546,8 +546,11 @@ a {
   z-index: -9;
 }
 .container #ourteam .down_side .card_ctr .img_ctr {
-  width: 200px;
-  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
   overflow: hidden;
 }
 .container #ourteam .down_side .card_ctr .img_ctr img {
@@ -656,10 +659,8 @@ a {
   color: #ef8b15;
 }
 .container .footer_ctr .right_side .up_side .right .medsos_ctr img {
-  padding: 8px;
-  border: 1px solid #ef8b15;
   width: 50px;
-  border-radius: 50px;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 1024px) {

@@ -634,8 +634,11 @@ a {
         }
 
         .img_ctr {
-          width: 200px;
-          height: 200px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 300px;
           // border-radius: 100%;
           overflow: hidden;
 
@@ -766,10 +769,8 @@ a {
 
           .medsos_ctr {
             img {
-              padding: 8px;
-              border: 1px solid #ef8b15;
               width: 50px;
-              border-radius: 50px;
+              margin-right: 20px;
             }
           }
         }
