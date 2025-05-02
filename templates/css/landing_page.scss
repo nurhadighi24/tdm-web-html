@@ -198,9 +198,11 @@ a {
         .benefits_ctr {
           width: 280px;
           padding-bottom: 40px;
-
           .logo-inline {
-            display: none;
+            display: block;
+            margin: auto;
+            width: 40px;
+            height: 40px;
           }
 
           .title {
@@ -247,8 +249,7 @@ a {
           width: 50%;
           background-color: white;
           border-radius: 5px;
-          border: 1px solid #d9d9d9;
-          box-shadow: 5px 5px 5px 5px #888888;
+
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -286,8 +287,7 @@ a {
           width: 50%;
           background-color: white;
           border-radius: 5px;
-          border: 1px solid #d9d9d9;
-          box-shadow: 5px 5px 5px 5px #888888;
+
           display: flex;
           flex-direction: column;
           justify-content: center;
