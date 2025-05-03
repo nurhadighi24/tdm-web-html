@@ -347,13 +347,12 @@ a {
 .container #gallery {
   padding-left: 78px;
   padding-right: 78px;
+  max-width: 1366px;
+  margin: auto;
 }
 .container #gallery .sentence_ctr {
   display: flex;
   justify-content: space-between;
-}
-.container #gallery .sentence_ctr .left_side {
-  width: 535px;
 }
 .container #gallery .sentence_ctr .left_side .title {
   font-family: Poppins;
@@ -375,6 +374,7 @@ a {
   display: flex;
   justify-content: end;
   gap: 10px;
+  padding-right: 37px;
 }
 .container #gallery .gallery_ctr_1 .left_side {
   display: flex;
@@ -934,9 +934,7 @@ a {
   .container #gallery .sentence_ctr .gallery_ctr_1 {
     gap: 3px;
     justify-content: start;
-  }
-  .container #gallery .sentence_ctr .gallery_ctr_1 .left_side {
-    justify-content: start;
+    padding-right: 0;
   }
   .container #gallery .sentence_ctr .gallery_ctr_1 .left_side img {
     width: 100px;

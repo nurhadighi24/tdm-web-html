@@ -412,12 +412,13 @@ a {
   #gallery {
     padding-left: 78px;
     padding-right: 78px;
+    max-width: 1366px;
+    margin: auto;
     .sentence_ctr {
       display: flex;
       justify-content: space-between;
 
       .left_side {
-        width: 535px;
         .title {
           font-family: Poppins;
           font-weight: 600;
@@ -442,6 +443,7 @@ a {
       display: flex;
       justify-content: end;
       gap: 10px;
+      padding-right: 37px;
 
       .left_side {
         display: flex;
@@ -1103,8 +1105,9 @@ a {
         .gallery_ctr_1 {
           gap: 3px;
           justify-content: start;
+          padding-right: 0;
           .left_side {
-            justify-content: start;
+            // justify-content: start;
             img {
               width: 100px;
               display: block;
