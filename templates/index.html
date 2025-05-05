@@ -37,7 +37,7 @@
         <img src="images/image_hero.png" alt="hero image" />
       </section>
 
-      <section id="aboutUs">
+      <section id="aboutUs" class="fade-in-section">
         <img
           class="logo_section"
           src="images/logo_section.png"
@@ -74,7 +74,7 @@
             <div class="left_side">
               <div class="benefits_ctr">
                 <img
-                  src="images/logo_bulat.png"
+                  src="images/export_icon.png"
                   class="logo-inline"
                   alt="logo bulat"
                 />
@@ -86,7 +86,7 @@
               </div>
               <div class="benefits_ctr">
                 <img
-                  src="images/logo_bulat.png"
+                  src="images/logistic_icon.png"
                   class="logo-inline"
                   alt="logo bulat"
                 />
@@ -100,7 +100,7 @@
             <div class="right_side">
               <div class="benefits_ctr">
                 <img
-                  src="images/logo_bulat.png"
+                  src="images/imports_icon.png"
                   class="logo-inline"
                   alt="logo bulat"
                 />
@@ -112,7 +112,7 @@
               </div>
               <div class="benefits_ctr">
                 <img
-                  src="images/logo_bulat.png"
+                  src="images/inspire_icon.png"
                   class="logo-inline"
                   alt="logo bulat"
                 />
@@ -160,7 +160,7 @@
         </div>
       </section>
 
-      <section id="whytdm">
+      <section id="whytdm" class="fade-in-section">
         <div class="up_side">
           <div class="left_side">
             <p class="title">Why TDM Indonesia?</p>
@@ -207,7 +207,7 @@
         </div>
       </section>
 
-      <section id="gallery">
+      <section id="gallery" class="fade-in-section">
         <div class="sentence_ctr">
           <div class="left_side">
             <p class="title">Building Bridges, Together</p>
@@ -257,7 +257,7 @@
         </div>
       </section>
 
-      <section id="ourpartners">
+      <section id="ourpartners" class="fade-in-section">
         <div class="up_side">
           <p class="title">Powered by Partnerships</p>
           <p class="description">
@@ -285,7 +285,7 @@
         </div>
       </section>
 
-      <section id="ourteam">
+      <section id="ourteam" class="fade-in-section">
         <div class="up_side">
           <p class="title_orange">OUR TEAM</p>
           <p class="title">Meet The Team</p>
@@ -482,5 +482,25 @@
       chatBox.style.display =
         chatBox.style.display === "block" ? "none" : "block";
     }
+  </script>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    document.querySelectorAll(".fade-in-section").forEach((section) => {
+      observer.observe(section);
+    });
   </script>
 </html>

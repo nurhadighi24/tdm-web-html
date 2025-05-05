@@ -26,6 +26,18 @@ a {
   color: $blue;
 }
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+}
+
 .container {
   #scrollTopBtn {
     position: fixed;
@@ -1174,11 +1186,11 @@ a {
         }
 
         .gallery_ctr_1 {
-          gap: 3px;
-          justify-content: start;
+          // gap: 3px;
+          // justify-content: start;
           padding-right: 0;
           .left_side {
-            // justify-content: start;
+            justify-content: start;
             img {
               width: 100px;
               display: block;
@@ -1187,11 +1199,11 @@ a {
           .center_side {
             justify-content: start;
             img {
-              width: 85px;
+              width: 100%;
             }
           }
           .right_side {
-            display: block;
+            // display: block;
             justify-content: start;
             img {
               width: 100px;
