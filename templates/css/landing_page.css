@@ -659,6 +659,65 @@ a {
   width: 50px;
   margin-right: 20px;
 }
+.container .whatsapp-chat-overlay {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: "Poppins", sans-serif;
+  z-index: 9999;
+}
+.container .whatsapp-chat-overlay .whatsapp-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.container .whatsapp-chat-overlay .whatsapp-icon img {
+  width: 24px;
+  height: 24px;
+}
+.container .whatsapp-chat-overlay .chat-box {
+  display: none;
+  width: 300px;
+  margin-top: 10px;
+}
+.container .whatsapp-chat-overlay .chat-box .chat-header {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+.container .whatsapp-chat-overlay .chat-box .chat-body {
+  background-color: #f1f1f1;
+  border: 1px solid #dddddd;
+  border-top: none;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+.container .whatsapp-chat-overlay .chat-box .chat-body .message {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.container .whatsapp-chat-overlay .chat-box .chat-body .chat-button {
+  display: block;
+  background-color: #25d366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 1024px) {
   .container .navbar {

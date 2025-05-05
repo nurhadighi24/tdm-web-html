@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/landing_page.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link
+      rel="TDM icon"
+      href="/templates/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>TDM Indonesia</title>
   </head>
   <body>
     <div class="container">
-      <button id="scrollTopBtn" title="Back to Top">↑</button>
+      <!-- <button id="scrollTopBtn" title="Back to Top">↑</button> -->
       <header class="navbar">
         <div class="hamburger" id="hamburger">&#9776;</div>
         <a class="left_side" href="#"
@@ -379,6 +384,33 @@
           </div>
         </div>
       </footer>
+      <div class="whatsapp-chat-overlay">
+        <div class="whatsapp-icon" onclick="toggleWhatsAppChat()">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp"
+          />
+        </div>
+        <div class="chat-box" id="whatsappChatBox">
+          <div class="chat-header" onclick="toggleWhatsAppChat()">
+            <span>Let's chat on WhatsApp</span>
+          </div>
+          <div class="chat-body">
+            <div class="message">
+              <!-- <strong>Yoga</strong><br /> -->
+              Hi, How are you? 👋<br />
+              🇮🇩 We are from TDM Trading<br />
+              Let’s discuss with our team on WhatsApp!
+            </div>
+            <a
+              href="https://wa.me/306945727892"
+              target="_blank"
+              class="chat-button"
+              >Start Chat</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script>
@@ -442,5 +474,13 @@
         sidebar.classList.remove("active");
       });
     });
+  </script>
+
+  <script>
+    function toggleWhatsAppChat() {
+      const chatBox = document.getElementById("whatsappChatBox");
+      chatBox.style.display =
+        chatBox.style.display === "block" ? "none" : "block";
+    }
   </script>
 </html>
