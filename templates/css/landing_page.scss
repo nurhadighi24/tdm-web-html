@@ -923,7 +923,7 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container {
     #aboutUs {
       .logo_section {
@@ -1164,6 +1164,7 @@ a {
     #gallery {
       padding-left: 16px;
       padding-right: 16px;
+      width: 100%;
       .sentence_ctr {
         display: block;
         .left_side {
@@ -1189,6 +1190,7 @@ a {
           // gap: 3px;
           // justify-content: start;
           padding-right: 0;
+          margin-top: 20px;
           .left_side {
             justify-content: start;
             img {
@@ -1346,3 +1348,15 @@ a {
     }
   }
 }
+
+// @media screen and (max-width: 1366px) {
+//   .container {
+//     #gallery {
+//       .sentence_ctr {
+//         .gallery_ctr_1 {
+//           padding-right: 0;
+//         }
+//       }
+//     }
+//   }
+// }
